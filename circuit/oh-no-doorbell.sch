@@ -30,12 +30,6 @@ Wire Wire Line
 	1750 2375 1750 2475
 Wire Wire Line
 	1750 2475 3150 2475
-Wire Wire Line
-	2350 1775 2700 1775
-Wire Wire Line
-	2700 1775 2700 1075
-Wire Wire Line
-	2700 1075 1750 1075
 $Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 6220353C
@@ -54,10 +48,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 1475 2350 1475
 Wire Wire Line
-	3150 1075 2700 1075
-Wire Wire Line
 	3150 1375 3150 1075
-Connection ~ 2700 1075
 Wire Wire Line
 	3150 1575 3150 2475
 Wire Wire Line
@@ -69,4 +60,8 @@ Text Label 2450 1575 0    50   ~ 0
 BJT_E
 Text Label 2450 1075 0    50   ~ 0
 BJT_C
+Wire Wire Line
+	1750 1075 3150 1075
+Text Notes 1775 3000 0    50   ~ 0
+Pins 2+3 are tied together so that,\nin addition to turning the ATtiny\ninto a sound chip, this PCB can \nturn a SOT-3 transistor into an\nequivalent TO-92 transistor with a\nnormal TO-92 transistor pinout.
 $EndSCHEMATC
