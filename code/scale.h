@@ -45,6 +45,13 @@
 #define F5  21  //  698.46     1430
 #define Fs5 22  //  739.99     1515
 
-const uint16_t scale[] = { 0, 451, 477, 506, 536, 568, 601, 637, 675, 715, 758, 803, 851, 901, 955, 1011, 1072, 1135, 1203, 1274, 1350, 1430, 1515}; // Should be in progmem maybe?
+// Lazy hack
+#define Gs3 23
+#define G3 24
+
+const uint16_t scale[] = { 0, 451, 477, 506, 536, 568, 601, 637, 675, 715, 758, 803, 851, 901, 955, 1011, 1072, 1135, 1203, 1274, 1350, 1430, 1515,
+	// lazy hack
+	425, 401
+	}; // Should be in progmem maybe?
 
 #endif /* SCALE_H_ */
